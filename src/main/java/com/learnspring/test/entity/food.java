@@ -57,7 +57,7 @@ public class food {
         return this.date;
     }
 
-    public void setString(String date){
+    public void setDate(String date){
         this.date = date;
     }
 }

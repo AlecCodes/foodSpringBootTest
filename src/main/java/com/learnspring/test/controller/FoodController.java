@@ -29,6 +29,7 @@ public class FoodController {
                 .map(food -> {
                     food.setName(updatedFood.getName());
                     food.setCarbs(updatedFood.getCarbs());
+                    food.setDate(updatedFood.getDate());
                 });
     }
 
