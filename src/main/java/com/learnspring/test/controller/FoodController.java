@@ -38,4 +38,10 @@ public class FoodController {
         return FOODS.findAll();
     }
 
+    @DeleteMapping("/cat/{id}")
+    public List<food> deleteFood(@PathVariable Integer id){
+        FOODS.deleteById(id);
+        return FOODS.findAll();
+    }
+
 }
