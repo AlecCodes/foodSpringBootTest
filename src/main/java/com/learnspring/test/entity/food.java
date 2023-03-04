@@ -39,12 +39,12 @@ public class food {
         return this.name;
     }
 
-    public void setId(String name){
+    public void setName(String name){
         this.name = name;
     }
     //  carbs GETTER SETTER
 
-    public Integer getCarbs (){
+    public Integer getCarbs(){
         return this.carbs;
     }
 
