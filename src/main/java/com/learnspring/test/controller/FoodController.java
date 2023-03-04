@@ -30,7 +30,12 @@ public class FoodController {
                     food.setName(updatedFood.getName());
                     food.setCarbs(updatedFood.getCarbs());
                     food.setDate(updatedFood.getDate());
+                    return FOODS.save(food);
+                })
+                .orElseGet(() -> {
+                    return FOODS.save(updatedFood);
                 });
+        return FOODS.findAll();
     }
 
 }
